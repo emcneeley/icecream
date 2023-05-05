@@ -1,0 +1,22 @@
+.bg-image {
+    background-image: url(https://media.discordapp.net/attachments/997260939135025223/1103423043746942976/dripthro_futureistic_ice_cream_shop_high_resolution_hyper_reali_6c5f39c6-6ded-440b-96d1-0d1d473a85ee.png?width=614&height=614);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.cart {
+    background: rgba(41, 39, 39, 0.46);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(41, 39, 39, 0.5);
+    min-height: 40vh;
+}
+
+
+img {
+    height: 20vh;
+    width: 20vh;
+}

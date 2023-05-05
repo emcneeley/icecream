@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>YOU SCREAM </title>
+</head>
+<style>
+    body.debug .container,
+    body.debug .container-fluid {
+        outline: 2px double blue;
+        outline-offset: -2px;
+    }
+
+    body.debug .row {
+        outline: 2px dashed red;
+        outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+        outline: 2px dotted forestgreen;
+        outline-offset: -3px;
+    }
+</style>
+
+<body class="debug bg-image">
+    <header class="container-fluid">
+        <section class="row">
+            <div class="col-12 bg-black text-white">
+                <h1>ICE CREAM <i class=" mdi mdi-ice-cream"></i></h1>
+            </div>
+        </section>
+    </header>
+
+    <main class="container-fluid">
+        <section class="row">
+            <div class="col-md-4">
+                <div class="cart mt-5">
+                    <div class="d-flex justify-content-between">
+                        <p>PRICE</p>
+                        <p>QT</p>
+                        <div>
+                            <p>TOTAL: $0</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //STUB - this is where images go that need to be clicked in order to "order items" -->
+            <div class="col-md-8">
+                <div class="row">
+                    <div onclick="chooseToppings('Sprinkles')" class="col-4">
+                        <img class=""
+                            src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
+                            alt="">
+                    </div>
+                    <div onclick="chooseToppings('Chocolate Chips')" class="col-4">
+                        <img class=""
+                            src="https://images.unsplash.com/photo-1585502866757-30ae9e509e31?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"
+                            alt="">
+                    </div>
+                    <div onclick="chooseToppings('Gummy Worms')" class="col-4">
+                        <img class=""
+                            src="https://images.unsplash.com/photo-1600359756098-8bc52195bbf4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=776&q=80"
+                            alt="">
+                    </div>
+
+                    <div onclick="chooseContainers('Waffle Cone')" class="col-4">
+                        <img class=""
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5KlRIX4Tb9MtUnx3dGUZdNykU5xz62GmS2Zc37LCiXA&usqp=CAU&ec=48665701"
+                            alt="">
+                    </div>
+                    <div onclick="chooseContainers('Waffle Bowl')" class="col-4">
+                        <img class=""
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5KlRIX4Tb9MtUnx3dGUZdNykU5xz62GmS2Zc37LCiXA&usqp=CAU&ec=48665701"
+                            alt="">
+                    </div>
+                    <div onclick="chooseIceCream('Vanilla')" class="col-4">
+                        <img src="https://images.unsplash.com/photo-1570197788417-0e82375c9371?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=816&q=80"
+                            alt="">
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="container-fluid">
+
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
